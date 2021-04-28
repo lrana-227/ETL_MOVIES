@@ -6,11 +6,12 @@ This project takes data from three different sources to compile a database of to
 
 ## Extract
 
-First, the top movies are taken from WIKI. The webscraping method was used to read the table of movie info. Rank, Movie Name, Director, Year, and Studio 
+First, the top movies are taken from WIKI (https://en.wikipedia.org/wiki/AFI%27s_100_Years...100_Movies_(10th_Anniversary_Edition). The webscraping method was used to read the table of movie info. Rank, Movie Name, Director, Year, and Studio 
 
-Second, what the movie is rated and the plot was extracted by using the OMDb API.
 
-Third, the revenue of the movie was extracted from a CSV file (movies_metadata.csv) which was found from Kaggle. 
+Second, what the movie is rated and the plot was extracted by using the OMDb API (http://www.omdbapi.com/).
+
+Third, the revenue of the movie was extracted from a CSV file (movies_metadata.csv) which was found from Kaggle (https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings.csv). 
 
 ## Transform
 WEBSCRAPING--> Columns which were not needed were moved, the column names chnaged so it could merge later, and the index was set to the Rank. Rank was also made into a string since the key cannot be an integer. 
